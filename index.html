@@ -25,11 +25,12 @@
     <main>
       <section class="contents">
         <h1><span>Publish Your podcasts</span> Everywhere.</h1>
-        <p>Upload your audio to Pod with a single click. We'll then distribute your podcast to Spotify. Apple Podcasts. Google Podcasts. Pocket Casts and more!</p>
-        <form>
-          <input type="email" placeholder="Email address" autocomplete="off">
-          <button type="submit">Request Access</button>
+        <p id="infor">Upload your audio to Pod with a single click. We'll then distribute your podcast to Spotify. Apple Podcasts. Google Podcasts. Pocket Casts and more!</p>
+        <form name="registration">
+          <input type="email" name="email" placeholder="Email address" autocomplete="off">
+          <button type="submit" id="submit">Request Access</button>
         </form>
+        <div class="error"></div>
         <ul class="partners">
           <li>
             <a href="https://www.spotify.com/br/" target="_blank" rel="noopener noreferrer">
@@ -55,6 +56,8 @@
       </section>
     </main>
   </div>
+
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

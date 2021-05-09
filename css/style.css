@@ -93,14 +93,10 @@ main {
   display: block;
 }
 
-.contents p {
+.contents #infor {
   font-size: 1.2rem;
   font-weight: lighter;
   padding: 2rem 10rem 2.5rem 0;
-}
-
-.contents form {
-  padding-bottom: 4rem;
 }
 
 .contents input {
@@ -114,13 +110,18 @@ main {
   outline: none;
 }
 
+.contents input:focus {
+  outline-style: dashed;
+  outline-color: var(--color-green);
+}
+
 .contents input::placeholder {
   color: var(--color-gray);
 }
 
 .contents button {
   width: 140px;
-  padding: 1rem 1rem;
+  padding: 1.1rem 1rem;
   border: none;
   border-radius: 2rem;
   background-color: var(--color-green);
@@ -139,7 +140,13 @@ main {
   color: var(--color-black);
 }
 
+.error p {
+  color: var(--color-red);
+  margin-left: 30px;
+}
+
 .contents .partners {
+  margin-top: 3rem;
   width: 100%;
   display: flex;
   align-items: center;
@@ -236,13 +243,14 @@ main {
     justify-content: center;
     align-items: center;
   }
+
   .contents h1 {
     font-size: 2.25rem;
     text-align: center;
     padding: 0 1rem;
   }
 
-  .contents p {
+  .contents #infor {
     font-size: 1.1rem;
     text-align: center;
     padding: 2rem 1rem;
@@ -267,6 +275,11 @@ main {
     margin-left: 0;
     width: 100%;
     max-width: 100%;
+  }
+
+  .error p {
+    color: var(--color-red);
+    margin: auto;
   }
 
   .contents .partners {
